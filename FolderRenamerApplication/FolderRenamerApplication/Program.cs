@@ -14,14 +14,14 @@ string? choice = Console.ReadLine();
 int totalLines = 0;
 int totalChangedLines = 0;
 
-// This is the path where the log file will be written. It is retrieved from the appsettings.json.
-StreamWriter sw = new StreamWriter($"{configuration.GetSection("Paths:LogFilePath").Value}");
-Console.SetOut(sw);
-
 while (true)
 {
     if (choice == "Y" || choice == "y")
     {
+        // This is the path where the log file will be written. It is retrieved from the appsettings.json.
+        StreamWriter sw = new StreamWriter($"{configuration.GetSection("Paths:LogFilePath").Value}");
+        Console.SetOut(sw); 
+      
         try
         {
             // Here, the path of the folders to be renamed is retrieved from the appsettings.json.
