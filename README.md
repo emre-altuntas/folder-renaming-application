@@ -1,6 +1,4 @@
-# folder-renaming-application
-Folder Renaming Application
-
+# Folder Renaming Application
 This application is a console application that renames folders using C# 11.0.
 
 Working Principle:
